@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> EdelMall | Home. </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <script src="store.js" async></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html"><img src="images/logo2.PNG" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="refund.html">Action</a></li>
+              <li><a class="dropdown-item" href="refund.html">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="refund.html">Something else here</a></li>
+            </ul>
+          </li>
+      
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Sliding Section-->
+
+  <!--Items Section-->
+  <!-- Parent container -->
+  <div class="row">
+    <!-- Child containers -->
+    <div class="col-md-2">
+      <div class="shop-item">
+        <span class="shop-item-title">Rina Cooking oil 2l</span>
+        <img class="shop-item-image" src="images/r1.PNG">
+        <div class="shop-item-details">
+          <span class="shop-item-price"> 560.99 </span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="shop-item">
+        <span class="shop-item-title">Sunrise Basmati Rice 2Kg</span>
+        <img class="shop-item-image" src="images/rice2.PNG">
+        <div class="shop-item-details">
+          <span class="shop-item-price"> 599.99 </span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="shop-item">
+        <span class="shop-item-title">Sunlight 2in1 1Kg</span>
+        <img class="shop-item-image" src="images/sunligh.PNG">
+        <div class="shop-item-details">
+          <span class="shop-item-price"> 300.00 </span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="shop-item">
+        <span class="shop-item-title">Samsung Galaxy</span>
+        <img class="shop-item-image" src="images/sam1.PNG">
+        <div class="shop-item-details">
+          <span class="shop-item-price"> 15999.00 </span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="shop-item">
+        <span class="shop-item-title">Bluetooth 5.1 earphone</span>
+        <img class="shop-item-image" src="images/bluetooth 1.PNG">
+        <div class="shop-item-details">
+          <span class="shop-item-price"> 899.00 </span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="shop-item">
+        <span class="shop-item-title">Lip Balm</span>
+        <img class="shop-item-image" src="images/lip1.PNG">
+        <div class="shop-item-details">
+          <span class="shop-item-price"> 500.00 </span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Cart section-->
+  <div class="cart-section">
+    <div class="alert alert-danger" role="alert" id="liveAlertPlaceholder"></div>
+    <h2 class="section-header, style text-center">CART</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">Ksh 0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">Purchase</button>
+
+    <script>
+      function prodImages() {
+        const prodImgs = document.querySelectorAll(".shop-item-image");
+
+        prodImgs.forEach(element => {
+          element.addEventListener('mouseover', function () {
+            element.style.width = '300px';
+          })
+          element.addEventListener('mouseout', function () {
+            element.style.width = '200px';
+          })
+        });
+
+      }
+      prodImages();
+    </script>
+
+    <!-- Footer -->
+
+    <div class="bg-info py-5; style text-center">
+      <h5>Contact Us</h5>
+      <P><i class="bi bi-geo-alt-fill"> EdelMall, Limuru Road, Nairobi, Kenya.</i></P>
+      <p><i class="bi bi-telephone"> +254 700 013 456</i></p>
+      <p><i class="bi bi-envelope-fill"> info@edelmall.com</i></p>
+
+      <a href="#" class="bi bi-facebook"></i></a>
+      <a href="#" class="bi bi-twitter"></i></a>
+      <a href="#" class="bi bi-whatsapp"></i></a>
+      <p> &copy 2022. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
